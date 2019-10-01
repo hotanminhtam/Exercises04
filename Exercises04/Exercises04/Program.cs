@@ -44,5 +44,23 @@ namespace Exercises04
                 }
             return true;
         }
+
+        public static int Square(int n)
+        {
+            return n * n;
+        }
+
+        public static int Cube(int n)
+        {
+            return n * n * n;
+        }
+
+        public static int Pow(int x, int y)
+        {
+            int rs = 1;
+            for (int i = 1; i <= y; i++)
+                rs = rs * x;
+            return rs;
+        }
     }
 }
