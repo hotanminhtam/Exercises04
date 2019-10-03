@@ -20,7 +20,8 @@ namespace Exercises04
             //Console.WriteLine(Abs(-1));
             //Console.WriteLine(Rand1());
             //Console.WriteLine(Rand2());
-            //Console.WriteLine(Ceil());
+            //Console.WriteLine(Ceil(7.6f));
+            Console.WriteLine(Floor(8.2f));
         }
 
         public static bool IsOdd(int n)
@@ -102,9 +103,18 @@ namespace Exercises04
             //return num;
         //}
 
-        //public static int Ceil(float x)
-        //{
-            
-        //}
+        public static int Ceil(float x)
+        {
+            if(x - (int)x == 0 || x < 0)
+            {
+                return (int)x;
+            }
+            return (int)(x) + 1;
+        }
+
+        public static int Floor(float x)
+        {
+            return x >= 0 ? (int)x : (int)x - 1;
+        }
     }
 }
